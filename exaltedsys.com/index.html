@@ -1,0 +1,467 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Exaltedsys.com</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="dist/css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dist/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Exaltedsys.com</a>
+      <a href="javascript:void()" id="sidebarCollapse" class="toggle-menu-ico col-md-1 mr-0">
+        <span data-feather="menu"></span>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span data-feather="bell"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span data-feather="settings"></span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Admin <span data-feather="chevron-down"></span></a>
+            <div class="dropdown-menu dd-menu-r rounded-0">
+              <div class="row">
+                <div class="col-sm-12 center">
+                  <img src="..." alt="..." class="rounded-circle">
+                </div>
+                <div class="col-sm-6">profile</div>
+                <div class="col-sm-6">signout</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    
+
+    <!-- <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">ExaltedSys.com</a>
+      <a href="" class="col-md-1 mr-0">
+        <span data-feather="menu"></span>
+      </a>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      
+    </nav> -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar" id="sidebar">
+          <div class="sidebar-sticky">
+
+            <div class="profile-info">
+              <div class="col-sm-12">
+                Credit Limit <small>34,000 / 50,000</small>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 74%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">74%</div>
+                </div>
+              </div>
+            </div>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Main Navigation</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#menu1" class="nav-link" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                  <span data-feather="file"></span>
+                  <span class="hidden-sm-down">Bookings</span> 
+                  <span class="dd-link" data-feather="chevron-down"></span></a>
+              </li>
+                <ul class="collapse nav-item" id="menu1">
+                    <li class="nav-item">
+                      <a href="pages/actual-bookings.html" class="nav-link" data-parent="#menu1">Actual Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pages/missing-bookings.html" class="nav-link" data-parent="#menu1">Missing Bookings</a>
+                    </li>
+                </ul>
+
+              <li class="nav-item">
+                <a href="#menu2" class="nav-link" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                  <span data-feather="rotate-ccw"></span>
+                  <span class="hidden-sm-down">Refunds</span> </a>
+              </li>
+                <ul class="collapse nav-item" id="menu2">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" data-parent="#menu2">Online Refunds</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" data-parent="#menu2">Expiry Refunds</a>
+                    </li>
+                </ul>
+
+              <li class="nav-item">
+                <a href="#pnrMenu" class="nav-link" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                  <span data-feather="file-text"></span>
+                  PNR
+                </a>
+              </li>
+                <ul class="collapse nav-item" id="pnrMenu">
+                  <li class="nav-item">
+                    <a href="#displayPnrMenu" class="nav-link" data-toggle="collapse" aria-expanded="false">Display PNR </a>
+                  </li>
+                  <!-- <ul class="collapse" id="displayPnrMenu">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link" data-parent="#displayPnrMenu">Subitem 1 a</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link" data-parent="#displayPnrMenu">Subitem 2 b</a>
+                      </li>
+                      <li class="nav-item"><a href="#" class="nav-link" data-parent="#displayPnrMenu">Subitem 4 d</a></li>
+                  </ul> -->
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" data-parent="#pnrMenu">Cancel PNR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" data-parent="#pnrMenu">Claim PNR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" data-parent="#pnrMenu">Quip PNR To</a>
+                  </li>
+                </ul>
+
+              <li class="nav-item">
+                <a href="#voidMenu" class="nav-link" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                  <span data-feather="alert-triangle"></span>
+                  VOID
+                </a>
+              </li>
+                <ul class="collapse nav-item" id="voidMenu">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" data-parent="#voidMenu">PNR Wise</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" data-parent="#voidMenu">Eticket Number</a>
+                  </li>
+                </ul>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="settings"></span>
+                  General Settings
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Airline Markup
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="send"></span>
+                  Promotion Fare
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a  href="#agentsMenu" class="nav-link" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                  <span data-feather="users"></span>
+                  Agents & Users
+                </a>
+              </li>
+              <ul class="collapse nav-item" id="agentsMenu">
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-parent="#agentsMenu">Agents </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-parent="#agentsMenu">Sub Agents</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-parent="#agentsMenu">AMS Agents</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-parent="#agentsMenu">Users</a>
+                </li>
+              </ul>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Activity Log
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Reports</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a  href="#saleReportMenu" class="nav-link" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                  <span data-feather="pie-chart"></span>
+                  Sale Reports
+                </a>
+              </li>
+              <ul class="collapse nav-item" id="saleReportMenu">
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-parent="#saleReportMenu">IATA Sale Report</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-parent="#saleReportMenu">PSA Sale Report</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-parent="#saleReportMenu">Sale Journal</a>
+                </li>
+              </ul>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Sale Register
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Sale Summary
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Admin Reports
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" id="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="page-title">
+            <h4 class="h4 inline-block">Dashboard</h4>
+            <small>Lorem Ipsum</small>
+          </div>
+          <div class="row">
+            <div class="col-sm-8">
+              <!-- <div class="search-form">
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                      <span data-feather="send"></span>
+                      Flights
+                    </a>
+                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Hotels</a>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <form action="" class="form-horizontal">
+                      <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="">Origin</label>
+                            <input type="text" class="input-xlarge form-control">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="">Destination</label>
+                            <input type="text" class="input-xlarge form-control">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label for="">Departing</label>
+                            <input type="text" class="input-xlarge form-control calendar">
+                        </div>
+                        <div class="col-sm-3">
+                            <label for="">Returning</label>
+                            <input type="text" class="input-xlarge form-control calendar">
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="">Adults</label>
+                            <select name="" id="" class="form-control"></select>
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="">Children</label>
+                            <select name="" id="" class="form-control"></select>
+                        </div>
+                        <div class="col-sm-2">
+                            <label for="">Infant</label>
+                            <select name="" id="" class="form-control"></select>
+                        </div>
+                      </div>
+                      <button class="btn btn-success btn-rounded"><span class="fa fa-paper-plane"></span> Search</button>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Hotels</div>
+                </div>
+              </div> -->
+
+              <div class="quick-links md-bootstrap">
+                <div class="md-panel">
+                  <div class="row">
+                    <div class="col-sm-2">
+                      <a href="" class="icon-link">
+                        <img src="assets/icons/small/plane-02.png" alt="">
+                        Flights
+                      </a>
+                    </div>
+                    <div class="col-sm-2">
+                      <a href="" class="icon-link">
+                        <img src="assets/icons/small/hotel.png" alt="">
+                        Hotels
+                      </a>
+                    </div>
+                    <div class="col-sm-2">
+                      <a href="" class="icon-link">
+                        <img src="assets/icons/small/plane-tickets.png" alt="">
+                        Bookings
+                      </a>
+                    </div>
+                    <div class="col-sm-2">
+                      <a href="" class="icon-link">
+                        <img src="assets/icons/small/wallet.png" alt="">
+                        Sales
+                      </a>
+                    </div>
+                    <div class="col-sm-2">
+                      <a href="" class="icon-link">
+                        <img src="assets/icons/small/postcard.png" alt="">
+                        PNR
+                      </a>
+                    </div>
+                    <div class="col-sm-2">
+                      <a href="" class="icon-link">
+                        <img src="assets/icons/small/settings.png" alt="">
+                        Settings
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                  <h3 class="h3 fw-n">Analytics</h3>
+                  <div class="btn-toolbar mb-2 mb-md-0">
+                    <div class="btn-group mr-2">
+                      <button class="btn btn-sm btn-outline-secondary">Share</button>
+                      <button class="btn btn-sm btn-outline-secondary">Export</button>
+                    </div>
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                      <span data-feather="calendar"></span>
+                      This week
+                    </button>
+                  </div>
+                </div>
+              <div class="chart-container">
+
+                <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
+              </div>
+              
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">Simple Instructions</h5>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="dist/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <!-- <script type="text/javascript" src="dist/js/mdb.min.js"></script> -->
+    <!-- slim scroll bar -->
+    <script type="text/javascript" src="dist/js/mouse-wheel.min.js"></script>
+    <script type="text/javascript" src="dist/js/jquery.mCustomScrollbar.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+    <!-- Graphs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidebar-sticky").mCustomScrollbar({
+          theme:"dark"
+        });
+        
+        $('#sidebarCollapse').on('click', function () {
+          $('#sidebar').toggleClass('active');
+          $('#main').toggleClass('col-lg-12');
+        });
+     });
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          datasets: [{
+            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+            lineTension: 0,
+            backgroundColor: 'transparent',
+            borderColor: '#007bff',
+            borderWidth: 4,
+            pointBackgroundColor: '#007bff'
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+          },
+          legend: {
+            display: false,
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

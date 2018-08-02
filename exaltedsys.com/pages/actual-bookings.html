@@ -1,0 +1,310 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Exaltedsys.com</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../dist/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">ExaltedSys.com</a>
+      <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky" id="sidebar">
+            
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html">
+                  <span data-feather="home"></span>
+                  Dashboard <span class="sr-only">(current)</span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#menu1" class="nav-link" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                  <span data-feather="file"></span>
+                  <span class="hidden-sm-down">Bookings</span> 
+                  <span data-feather="chevron-down"></span></a>
+              </li>
+                <ul class="collapse nav-item" id="menu1">
+                    <li class="nav-item">
+                      <a href="pages/actual-bookings.html" class="nav-link" data-parent="#menu1">Actual Bookings</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="pages/missing-bookings.html" class="nav-link" data-parent="#menu1">Missing Bookings</a>
+                    </li>
+                </ul>
+
+              <li class="nav-item">
+                <a href="#menu2" class="nav-link" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                  <span data-feather="rotate-ccw"></span>
+                  <span class="hidden-sm-down">Refunds</span> </a>
+              </li>
+                <ul class="collapse nav-item" id="menu2">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" data-parent="#menu2">Online Refunds</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link" data-parent="#menu2">Expiry Refunds</a>
+                    </li>
+                </ul>
+
+              <li class="nav-item">
+                <a href="#pnrMenu" class="nav-link" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                  <span data-feather="file-text"></span>
+                  PNR
+                </a>
+              </li>
+                <ul class="collapse nav-item" id="pnrMenu">
+                  <li class="nav-item">
+                    <a href="#displayPnrMenu" class="nav-link" data-toggle="collapse" aria-expanded="false">Display PNR </a>
+                  </li>
+                  <!-- <ul class="collapse" id="displayPnrMenu">
+                      <li class="nav-item">
+                        <a href="#" class="nav-link" data-parent="#displayPnrMenu">Subitem 1 a</a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" class="nav-link" data-parent="#displayPnrMenu">Subitem 2 b</a>
+                      </li>
+                      <li class="nav-item"><a href="#" class="nav-link" data-parent="#displayPnrMenu">Subitem 4 d</a></li>
+                  </ul> -->
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" data-parent="#pnrMenu">Cancel PNR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" data-parent="#pnrMenu">Claim PNR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" data-parent="#pnrMenu">Quip PNR To</a>
+                  </li>
+                </ul>
+
+              <li class="nav-item">
+                <a href="#voidMenu" class="nav-link" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                  <span data-feather="alert-triangle"></span>
+                  VOID
+                </a>
+              </li>
+                <ul class="collapse nav-item" id="voidMenu">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" data-parent="#voidMenu">PNR Wise</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" data-parent="#voidMenu">Eticket Number</a>
+                  </li>
+                </ul>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="settings"></span>
+                  General Settings
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="bar-chart-2"></span>
+                  Airline Markup
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="send"></span>
+                  Promotion Fare
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a  href="#agentsMenu" class="nav-link" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                  <span data-feather="users"></span>
+                  Agents & Users
+                </a>
+              </li>
+              <ul class="collapse nav-item" id="agentsMenu">
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-parent="#agentsMenu">Agents </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-parent="#agentsMenu">Sub Agents</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-parent="#agentsMenu">AMS Agents</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-parent="#agentsMenu">Users</a>
+                </li>
+              </ul>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="layers"></span>
+                  Activity Log
+                </a>
+              </li>
+            </ul>
+
+            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+              <span>Reports</span>
+              <a class="d-flex align-items-center text-muted" href="#">
+                <span data-feather="plus-circle"></span>
+              </a>
+            </h6>
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a  href="#saleReportMenu" class="nav-link" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false">
+                  <span data-feather="pie-chart"></span>
+                  Sale Reports
+                </a>
+              </li>
+              <ul class="collapse nav-item" id="saleReportMenu">
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-parent="#saleReportMenu">IATA Sale Report</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-parent="#saleReportMenu">PSA Sale Report</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-parent="#saleReportMenu">Sale Journal</a>
+                </li>
+              </ul>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Sale Register
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Sale Summary
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <span data-feather="file-text"></span>
+                  Admin Reports
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="page-title">
+                <h4 class="h4 inline-block">Total Bookings</h4>
+                <small>Lorem Ipsum</small>
+              </div>
+              <div class="table-responsive">
+                <div class="table-header sticky-top">
+                  <label for="">Search : 
+                    <input type="text" class="form-control"></label>
+                </div>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td colspan="2">Larry the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../assets/js/vendor/popper.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>
+
+    <!-- Graphs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script>
+      var ctx = document.getElementById("myChart");
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          datasets: [{
+            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
+            lineTension: 0,
+            backgroundColor: 'transparent',
+            borderColor: '#007bff',
+            borderWidth: 4,
+            pointBackgroundColor: '#007bff'
+          }]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              ticks: {
+                beginAtZero: false
+              }
+            }]
+          },
+          legend: {
+            display: false,
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
